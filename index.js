@@ -100,3 +100,57 @@
 // false
 
 // no entra
+
+
+// INTERPOLAR
+
+// Significa mostrar el valor de una variable o expresión en el HTML usando llaves dobles {{ }}
+
+// En un archivo TypeScript:
+
+// export class App {
+//   nombre = 'Fernanda';
+// }
+
+// En HTML:
+
+// <h1>Hola {{ nombre }}</h1>
+
+// Resultado en la página: 
+
+// Hola Fernanda
+
+// También se pueden mostrar números:
+
+// En TypeScript:
+
+// edad = 20;
+
+// En HTML:
+
+// <p>Tengo {{ edad }} años</p>
+
+// Resultado:
+
+// Tengo 20 años
+
+// Incluso expresiones simples:
+
+// <p>2 + 2 = {{ 2 + 2 }}</p>
+
+// Resultado: 2 + 2 = 4
+
+// La interpolación se usa para mostrar datos dinamicos:
+// - Nombres de usuarios
+// - Precios
+// - Mensajes
+// - Resultados de calculos
+// - Información obtenida de una API
+
+// Ejemplo: 
+// producto = 'Teclado';
+// precio = 50000;
+
+// HTML: 
+// <h2>{{ producto }}</h2>
+// <p>Precio: ${{ precio }}</p>
