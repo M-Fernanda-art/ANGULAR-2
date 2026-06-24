@@ -153,3 +153,73 @@
 // HTML: 
 // <h2>{{ producto }}</h2>
 // <p>Precio: ${{ precio }}</p>
+
+
+// NGLF Y NGFOR
+
+// Permiten controlar que se muestra en el HTML
+
+// NGLF
+
+// Sirve para mostrar u ocultar elementos segun una condición
+
+// TypeScript:
+
+// mostrarMensaje = true;
+
+// HTML:
+
+// <p *ngIf="mostrarMensaje">
+//   Hola Fernanda
+// </p>
+
+// Como mostrarMensaje es true, el texto desaparece.
+
+// Si se cambia: 
+
+// mostrarMensaje = false;
+
+// Angular lo elimina del HTML y ya no se ve.
+
+// Ejemplo:
+
+// logueado = true;
+
+// <h1 *ngIf="logueado">
+//   Bienvenido
+// </h1>
+
+// Si el usuario esta logueado, ve el mensaje.
+
+
+// *NGFOR
+
+// Sirve para recorrer listas (arrays)
+
+// TypeScript:
+
+// frutas = [
+//   'Manzana',
+//   'Pera',
+//   'Mango',
+//   'Banano'
+// ];
+
+// HTML: 
+
+// <ul>
+//   <li *ngFor="let fruta of frutas">
+//     {{ fruta }}
+//   </li>
+// </ul>
+
+// Resultado: 
+
+// • Manzana
+// • Pera
+// • Mango
+// • Banano
+
+// Se lee como: "Por cada fruta dentro del arreglo frutas..."
+
+// Angular va tomando cada elemento y lo guarada temporalmente en la variable fruta.
